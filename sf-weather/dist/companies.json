@@ -1,0 +1,629 @@
+{
+  "sourceFile": "daily_log.csv",
+  "asOf": "2026-10-10",
+  "selection": "12 unique companies balancing CA relevance, financial scale, operational damage and all requested effect families: money, quake, heat/cold, thunderstorm. Larger non-CA stories are included for impact; map positions are random demos. Only selected CSV rows are used; no claims are independently verified.",
+  "effectMapping": {
+    "money": "Funding round → falling banknotes (not profit)",
+    "quake": "Layoffs / halted pipeline → localized shaking (not a physical earthquake)",
+    "storm": "Lightning, Storm forming, Hurricane, Hurricane watch, Storms merging → localized thunderstorm; forming/watch remain reported or proposed as labeled",
+    "cold": "Cold front / negative market or revenue signal → cold overlay",
+    "heat": "Clay tender offer rising from $1.5B to $5B → warm valuation updraft (CSV weather: Evaporation), not a stock return or realized revenue"
+  },
+  "companies": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "domain": "openai.com",
+      "logo": "logos/openai.png",
+      "kind": "mixed",
+      "metric": "Reported ~$20B revenue run-rate gap",
+      "effects": [
+        "storm",
+        "cold"
+      ],
+      "city": "San Francisco",
+      "summary": "OpenAI rolls out GPT-6 in ChatGPT with Intelligent UI",
+      "events": [
+        {
+          "type": "storm",
+          "date": "Wed Oct 7",
+          "category": "Product launch",
+          "classification": "Product launch",
+          "weather": "Lightning",
+          "status": "Confirmed",
+          "headline": "OpenAI rolls out GPT-6 in ChatGPT with Intelligent UI",
+          "details": "GPT-6 Sol for Plus, Pro, Business and Enterprise. Intelligent UI builds charts, buttons, forms, calculators and games inside the chat. GPT-6 can start answering while still thinking; GPT-6 Instant is 44% faster than GPT-5.6 Instant on web search",
+          "companiesMentioned": "OpenAI",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 24",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "cold",
+          "date": "Thu Oct 8",
+          "category": "Rates and bonds",
+          "classification": "Rates and bonds",
+          "weather": "Cold front",
+          "status": "Reported",
+          "headline": "FT reports OpenAI's revenue run rate is ~$20B below what it signaled; chip stocks drop 3.4%",
+          "details": "Nvidia -2.9% to $230.48, erasing ~$169B. Broadcom, Intel, Micron down 2.9% or more. Nasdaq -1.3% to ~27,193, S&P -0.5%",
+          "companiesMentioned": "OpenAI, Nvidia, Broadcom, Intel, Micron",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 41",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "storm",
+          "date": "Thu Oct 8",
+          "category": "Product launch",
+          "classification": "Product launch",
+          "weather": "Lightning",
+          "status": "Confirmed",
+          "headline": "GPT-6 Luna starts rolling out to ChatGPT Free and Go users",
+          "details": "",
+          "companiesMentioned": "OpenAI",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 51",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "storm",
+          "date": "This week, day not given",
+          "category": "Round in talks",
+          "classification": "Round in talks",
+          "weather": "Storm forming",
+          "status": "Reported",
+          "headline": "OpenAI reportedly raising at a valuation over $1.2T",
+          "details": "",
+          "companiesMentioned": "OpenAI",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 70",
+          "amountM": null,
+          "valuationM": 1200000.0,
+          "amountMeaning": "Reported target / proposal; not completed proceeds"
+        }
+      ],
+      "impacts": {
+        "cold": {
+          "value": 20000,
+          "unit": "USD millions",
+          "basis": "Reported revenue run-rate gap"
+        }
+      }
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "domain": "nvidia.com",
+      "logo": "logos/nvidia.png",
+      "kind": "loss",
+      "metric": "~$169B market value erased (CSV)",
+      "effects": [
+        "cold",
+        "storm"
+      ],
+      "city": "San Francisco",
+      "summary": "Microsoft and Nvidia unveil the Surface Laptop Ultra on Nvidia's new RTX Spark chip",
+      "events": [
+        {
+          "type": "storm",
+          "date": "Wed Oct 7",
+          "category": "Product launch",
+          "classification": "Product launch",
+          "weather": "Lightning",
+          "status": "Confirmed",
+          "headline": "Microsoft and Nvidia unveil the Surface Laptop Ultra on Nvidia's new RTX Spark chip",
+          "details": "ARM chip with a Blackwell GPU, up to 1 petaflop of AI compute, runs 120B+ parameter models locally, up to 128GB memory. From $2,599, ships Oct 16. Surface RTX Spark Dev Box at $5,999 ships in November. Lenovo, Asus, Dell, MSI and HP laptops on Oct 16",
+          "companiesMentioned": "Microsoft, Nvidia",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 35",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "storm",
+          "date": "Wed Oct 7",
+          "category": "Product launch",
+          "classification": "Product launch",
+          "weather": "Lightning",
+          "status": "Confirmed",
+          "headline": "Windows 11 gets agent features: sandboxing, agent attribution, IT controls",
+          "details": "HydraFusion (local plus cloud agents) launches Oct 15 for GitHub Copilot, CLI and VS Code. On-device models: MAI Code 1.1 Flash and Nvidia Nemotron. Meta's Muse agent comes to Windows",
+          "companiesMentioned": "Microsoft, Meta, Nvidia",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 36",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "cold",
+          "date": "Thu Oct 8",
+          "category": "Rates and bonds",
+          "classification": "Rates and bonds",
+          "weather": "Cold front",
+          "status": "Reported",
+          "headline": "FT reports OpenAI's revenue run rate is ~$20B below what it signaled; chip stocks drop 3.4%",
+          "details": "Nvidia -2.9% to $230.48, erasing ~$169B. Broadcom, Intel, Micron down 2.9% or more. Nasdaq -1.3% to ~27,193, S&P -0.5%",
+          "companiesMentioned": "OpenAI, Nvidia, Broadcom, Intel, Micron",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 41",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "cold",
+          "date": "Fri Oct 9",
+          "category": "Rates and bonds",
+          "classification": "Rates and bonds",
+          "weather": "Sunshine returns",
+          "status": "Confirmed",
+          "headline": "Markets bounce: Nasdaq +0.6% to 27,366, now up 17.7% this year",
+          "details": "Nvidia still -0.5%. Cala ties the rebound to a US pledge not to strike Iran",
+          "companiesMentioned": "Nasdaq, Nvidia",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 64",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        }
+      ],
+      "impacts": {
+        "cold": {
+          "value": 169000,
+          "unit": "USD millions",
+          "basis": "Reported market value erased"
+        }
+      }
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "domain": "anthropic.com",
+      "logo": "logos/anthropic.png",
+      "kind": "storm",
+      "metric": "Reported IPO: up to ~$100B",
+      "effects": [
+        "storm"
+      ],
+      "city": "San Francisco, CA",
+      "summary": "Anthropic releases Claude Haiku 5.5",
+      "events": [
+        {
+          "type": "storm",
+          "date": "Wed Oct 7",
+          "category": "Product launch",
+          "classification": "Product launch",
+          "weather": "Lightning",
+          "status": "Confirmed",
+          "headline": "Anthropic releases Claude Haiku 5.5",
+          "details": "",
+          "companiesMentioned": "Anthropic",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 37",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "storm",
+          "date": "Thu Oct 8",
+          "category": "Product launch",
+          "classification": "Product launch",
+          "weather": "Lightning",
+          "status": "Confirmed",
+          "headline": "Google launches Gemini Agent, one AI agent for all work, at Gemini at Work 2026",
+          "details": "Plans tasks, writes and runs code, returns finished work in Workspace, Microsoft 365 and Slack. Picks the best model per task, Gemini or Claude. Gets its own Workspace account. Private preview",
+          "companiesMentioned": "Google, Anthropic",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 50",
+          "amountM": null,
+          "valuationM": null,
+          "amountMeaning": "No funding proceeds assigned"
+        },
+        {
+          "type": "storm",
+          "date": "Fri Oct 9",
+          "category": "IPO prep",
+          "classification": "IPO prep",
+          "weather": "Hurricane watch",
+          "status": "Reported",
+          "headline": "Anthropic reportedly preparing an IPO of up to ~$100B at ~$2T",
+          "details": "Expected in the coming weeks per reports; not confirmed",
+          "companiesMentioned": "Anthropic",
+          "region": "North America",
+          "location": "San Francisco, CA",
+          "source": "daily_log.csv · row 55",
+          "amountM": 100000.0,
+          "valuationM": 2000000.0,
+          "amountMeaning": "Reported target / proposal; not completed proceeds"
+        }
+      ],
+      "impacts": {
+        "storm": {
+          "value": 100000,
+          "unit": "USD millions",
+          "basis": "Reported IPO proceeds target, not completed funding"
+        }
+      }
+    },
+    {
+      "id": "spacex",
+      "name": "SpaceX",
+      "domain": "spacex.com",
+      "logo": "logos/spacex.png",
+      "kind": "storm",
+      "metric": "Reported ~$40B financing talks",
+      "effects": [
+        "storm"
+      ],
+      "city": "San Francisco",
+      "summary": "SpaceX reportedly seeking $40B in financing to buy Nvidia chips",
+      "events": [
+        {
+          "type": "storm",
+          "date": "Wed Oct 7",
+          "category": "Round in talks",
+          "classification": "Round in talks",
+          "weather": "Storm forming",
+          "status": "Reported",
+          "headline": "SpaceX reportedly seeking $40B in financing to buy Nvidia chips",
+          "details": "Added to chip stock swings; Micron -3.1% premarket",
+          "companiesMentioned": "SpaceX, Nvidia",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 25",
+          "amountM": 40000.0,
+          "valuationM": null,
+          "amountMeaning": "Reported target / proposal; not completed proceeds"
+        }
+      ],
+      "impacts": {
+        "storm": {
+          "value": 40000,
+          "unit": "USD millions",
+          "basis": "Reported financing target, not completed funding"
+        }
+      }
+    },
+    {
+      "id": "blue-origin",
+      "name": "Blue Origin",
+      "domain": "blueorigin.com",
+      "logo": "logos/blue-origin.png",
+      "kind": "funding",
+      "metric": "$10B funding round",
+      "effects": [
+        "money",
+        "storm"
+      ],
+      "city": "Kent, WA",
+      "summary": "Blue Origin closes a $10B round, its first from outside investors",
+      "events": [
+        {
+          "type": "funding",
+          "date": "Wed Oct 7",
+          "category": "Funding round",
+          "classification": "Funding round",
+          "weather": "Hurricane",
+          "status": "Confirmed",
+          "headline": "Blue Origin closes a $10B round, its first from outside investors",
+          "details": "Web reports put it at ~$130B. Cala dates it Oct 7 to 8. HQ Kent, WA",
+          "companiesMentioned": "Blue Origin",
+          "region": "North America",
+          "location": "Kent, WA",
+          "source": "daily_log.csv · row 26",
+          "amountM": 10000.0,
+          "valuationM": 130000.0,
+          "amountMeaning": "Disclosed funding round in supplied CSV; not revenue or profit"
+        }
+      ],
+      "amountM": 10000.0,
+      "impacts": {
+        "money": {
+          "value": 10000,
+          "unit": "USD millions",
+          "basis": "Funding round"
+        },
+        "storm": {
+          "value": 10000,
+          "unit": "USD millions",
+          "basis": "Hurricane-sized funding round"
+        }
+      }
+    },
+    {
+      "id": "vinci",
+      "name": "Vinci",
+      "domain": "getvinci.ai",
+      "logo": "logos/vinci.png",
+      "kind": "funding",
+      "metric": "$250M Series B",
+      "effects": [
+        "money"
+      ],
+      "city": "Palo Alto, CA",
+      "summary": "Vinci raises a $250M Series B at a $1.5B valuation",
+      "events": [
+        {
+          "type": "funding",
+          "date": "Tue Oct 6",
+          "category": "Funding round",
+          "classification": "Funding round",
+          "weather": "Downpour",
+          "status": "Confirmed",
+          "headline": "Vinci raises a $250M Series B at a $1.5B valuation",
+          "details": "Led by Advent International, Temasek and Xora; AMD Ventures, Eclipse, Khosla Ventures, Madrona joined",
+          "companiesMentioned": "Vinci",
+          "region": "North America",
+          "location": "Palo Alto, CA",
+          "source": "daily_log.csv · row 19",
+          "amountM": 250.0,
+          "valuationM": 1500.0,
+          "amountMeaning": "Disclosed funding round in supplied CSV; not revenue or profit"
+        }
+      ],
+      "amountM": 250.0,
+      "impacts": {
+        "money": {
+          "value": 250,
+          "unit": "USD millions",
+          "basis": "Funding round"
+        }
+      }
+    },
+    {
+      "id": "arena",
+      "name": "Arena",
+      "domain": "arena.ai",
+      "logo": "logos/arena.png",
+      "kind": "funding",
+      "metric": "$200M Series B · $3.1B value",
+      "effects": [
+        "money"
+      ],
+      "city": "San Francisco, CA",
+      "summary": "Arena raises a $200M Series B and becomes a $3.1B unicorn",
+      "events": [
+        {
+          "type": "funding",
+          "date": "Fri Oct 9",
+          "category": "Funding round",
+          "classification": "Funding round",
+          "weather": "Downpour",
+          "status": "Confirmed",
+          "headline": "Arena raises a $200M Series B and becomes a $3.1B unicorn",
+          "details": "Lightspeed and Khosla Ventures co-lead; Salesforce Ventures, Dell Technologies Capital",
+          "companiesMentioned": "Arena",
+          "region": "North America",
+          "location": "San Francisco, CA",
+          "source": "daily_log.csv · row 54",
+          "amountM": 200.0,
+          "valuationM": 3100.0,
+          "amountMeaning": "Disclosed funding round in supplied CSV; not revenue or profit"
+        }
+      ],
+      "amountM": 200.0,
+      "impacts": {
+        "money": {
+          "value": 200,
+          "unit": "USD millions",
+          "basis": "Funding round"
+        }
+      }
+    },
+    {
+      "id": "fico",
+      "name": "FICO",
+      "domain": "fico.com",
+      "logo": "logos/fico.png",
+      "kind": "quake",
+      "metric": "~570 roles · ~15% of staff",
+      "effects": [
+        "quake"
+      ],
+      "city": "San Jose, CA",
+      "summary": "FICO cuts about 15% of staff, ~570 people, in an AI-driven restructuring",
+      "events": [
+        {
+          "type": "quake",
+          "date": "Tue Oct 6",
+          "category": "Layoffs",
+          "classification": "Layoffs",
+          "weather": "Earthquake",
+          "status": "Confirmed",
+          "headline": "FICO cuts about 15% of staff, ~570 people, in an AI-driven restructuring",
+          "details": "$27M in severance charges",
+          "companiesMentioned": "FICO",
+          "region": "North America",
+          "location": "San Jose, CA",
+          "source": "daily_log.csv · row 22",
+          "amountM": null,
+          "valuationM": null,
+          "people": 570,
+          "staffShare": 0.15,
+          "amountMeaning": "No funding proceeds assigned"
+        }
+      ],
+      "impacts": {
+        "quake": {
+          "value": 570,
+          "unit": "roles",
+          "basis": "Approximate affected roles"
+        }
+      }
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "domain": "netflix.com",
+      "logo": "logos/netflix.png",
+      "kind": "quake",
+      "metric": "Reported ~800 roles · ~5%",
+      "effects": [
+        "quake"
+      ],
+      "city": "Los Gatos, CA",
+      "summary": "Netflix reportedly planning to cut ~5% of staff, about 800 people",
+      "events": [
+        {
+          "type": "quake",
+          "date": "Fri Oct 9",
+          "category": "Layoffs",
+          "classification": "Layoffs",
+          "weather": "Earthquake",
+          "status": "Reported",
+          "headline": "Netflix reportedly planning to cut ~5% of staff, about 800 people",
+          "details": "Announcement expected mid-October",
+          "companiesMentioned": "Netflix",
+          "region": "North America",
+          "location": "Los Gatos, CA",
+          "source": "daily_log.csv · row 66",
+          "amountM": null,
+          "valuationM": null,
+          "people": 800,
+          "staffShare": 0.05,
+          "amountMeaning": "No funding proceeds assigned"
+        }
+      ],
+      "impacts": {
+        "quake": {
+          "value": 800,
+          "unit": "roles",
+          "basis": "Reported approximate affected roles"
+        }
+      }
+    },
+    {
+      "id": "caribou-biosciences",
+      "name": "Caribou Biosciences",
+      "domain": "cariboubio.com",
+      "logo": "logos/caribou-biosciences.png",
+      "kind": "quake",
+      "metric": "Pipeline halted · layoffs",
+      "effects": [
+        "quake"
+      ],
+      "city": "Berkeley, CA",
+      "summary": "Caribou Biosciences halts pipeline work, lays off staff, explores options",
+      "events": [
+        {
+          "type": "quake",
+          "date": "Tue Oct 6",
+          "category": "Layoffs",
+          "classification": "Layoffs",
+          "weather": "Earthquake",
+          "status": "Confirmed",
+          "headline": "Caribou Biosciences halts pipeline work, lays off staff, explores options",
+          "details": "",
+          "companiesMentioned": "Caribou Biosciences",
+          "region": "North America",
+          "location": "Berkeley, CA",
+          "source": "daily_log.csv · row 23",
+          "amountM": null,
+          "valuationM": null,
+          "people": null,
+          "staffShare": null,
+          "amountMeaning": "No funding proceeds assigned"
+        }
+      ],
+      "impacts": {}
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "domain": "clay.com",
+      "logo": "logos/clay.png",
+      "kind": "gain",
+      "metric": "$5B tender value, from $1.5B",
+      "effects": [
+        "heat"
+      ],
+      "city": "San Francisco",
+      "summary": "Clay's second tender at $5B, up from $1.5B in May",
+      "events": [
+        {
+          "type": "heat",
+          "date": "This week, day not given",
+          "category": "Tender offer",
+          "classification": "Tender offer",
+          "weather": "Evaporation",
+          "status": "Confirmed",
+          "headline": "Clay's second tender at $5B, up from $1.5B in May",
+          "details": "",
+          "companiesMentioned": "Clay",
+          "region": "North America",
+          "location": "",
+          "source": "daily_log.csv · row 86",
+          "amountM": null,
+          "valuationM": 5000.0,
+          "amountMeaning": "No funding proceeds assigned"
+        }
+      ],
+      "impacts": {
+        "heat": {
+          "value": 3500,
+          "unit": "USD millions",
+          "basis": "Tender valuation increase from $1.5B to $5B"
+        }
+      }
+    },
+    {
+      "id": "schneider-electric",
+      "name": "Schneider Electric",
+      "domain": "se.com",
+      "logo": "logos/schneider-electric.png",
+      "kind": "storm",
+      "metric": "~$22.6B PTC acquisition agreement",
+      "effects": [
+        "storm"
+      ],
+      "city": "Boston, MA",
+      "summary": "Schneider Electric agrees to buy PTC for ~$22.6B in cash",
+      "events": [
+        {
+          "type": "storm",
+          "date": "Mon Oct 5",
+          "category": "Acquisition",
+          "classification": "Acquisition",
+          "weather": "Storms merging",
+          "status": "Confirmed",
+          "headline": "Schneider Electric agrees to buy PTC for ~$22.6B in cash",
+          "details": "$205 a share, ~$23.7B enterprise value. PTC is Boston-based industrial software",
+          "companiesMentioned": "Schneider Electric, PTC",
+          "region": "North America",
+          "location": "Boston, MA",
+          "source": "daily_log.csv · row 7",
+          "amountM": 22600.0,
+          "valuationM": null,
+          "amountMeaning": "Agreed acquisition consideration; not revenue"
+        }
+      ],
+      "impacts": {
+        "storm": {
+          "value": 22600,
+          "unit": "USD millions",
+          "basis": "Acquisition agreement consideration"
+        }
+      }
+    }
+  ]
+}
